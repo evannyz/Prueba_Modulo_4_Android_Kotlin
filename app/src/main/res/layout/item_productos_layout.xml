@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_lista_productos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    app:cardCornerRadius="16dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_contenedor_general"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_contenedor_nombre_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_productos_comestibles"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_nombre_producto"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/burgfest"
+                android:gravity="center"
+                android:textSize="26dp"
+                tools:text="Name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_precio_producto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/millions"
+                android:gravity="center"
+                android:textSize="20dp"
+                tools:text="Price" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_click_boton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/check_icon" />
+
+            <Space
+                android:id="@+id/sp_separador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minWidth="20dp"
+                android:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_ingredientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            tools:text="Ingredients" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
